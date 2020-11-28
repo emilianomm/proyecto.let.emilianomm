@@ -18,12 +18,12 @@ indxf = which(datos.r$Sexo == "F")
 datos.r.fem = datos.r[indxf,]
 
 ggplot(data = datos.r.masc) + aes(y = value, x = fecha, group = Grupo.de.edad, col = Grupo.de.edad) +
-          geom_line() + labs(title = "Evolución contagios por grupo de edad \ Masculino") +
+          geom_line() + labs(title = "Evolución contagios por grupo de edad \\ Masculino") +
             ylab("Casos Acumulados") + xlab("Fecha")
-ggsave("serie_contagios-edad-masculino.jpeg")
+ggsave("serie_contagios-edad-masculino.jpeg", path = saves.path, width = 8.09, height = 5)
 
 ggplot(data = datos.r.fem) + aes(y = value, x = fecha, group = Grupo.de.edad, col = Grupo.de.edad) +
-  geom_line()  + labs(title = "Evolución contagios por grupo de edad \ Femenino") +
+  geom_line()  + labs(title = "Evolución contagios por grupo de edad \\ Femenino") +
   ylab("Casos Acumulados") + xlab("Fecha")
-ggsave("serie_contagios-edad-femenino.jpeg")
+ggsave("serie_contagios-edad-femenino.jpeg", path = saves.path, width = 8.09, height = 5)
 
