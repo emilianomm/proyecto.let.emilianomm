@@ -1,0 +1,8 @@
+rojo -> "#FE1F14", "#B1150E", "#FE7872"
+
+lila -> "#A52C94", "#C06BB4"
+
+naranja -> "#EB9C3A", "#F3C388"
+
+
+mi.palette = c("#FE1F14", "#B1150E", "#FE7872", "#A52C94", "#C06BB4", "#EB9C3A", "#F3C388")
